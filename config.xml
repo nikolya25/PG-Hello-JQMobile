@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-		id          = "GUI"
+		id          = "Business card"
         version     = "1.0.0" >
 
-    <name>GUI</name>
-    <description>GUI app</description>
+    <name>Business card</name>
+    <description>Business card app</description>
     <author email="kolya_shchur@mail.ru">
 		Mykola Shchur
 	</author>
