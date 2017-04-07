@@ -12,35 +12,29 @@
 		
 		<!-- My app main page -->
 		<div data-role="page" id="pageone">
-		  <div data-role="header">
-			<h1>Business card</h1>
-		  </div>
-		  <div data-role="main" class="ui-content">
-			<p style="color:red; font-size:37px; text-align:center">
-				<b>Mykola Shchur</b><br>
-					kolya_shchur@mail.ru<br>
-					182452<br>
-					Applied Information Science</p>	
-
-			<a href="#interests" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Interests</a>
-		  </div>
-		  <div data-role="footer" data-position="fixed">
-			<h1>Mykola Shchur</h1>
-		  </div> 
-		</div> 
-		
-		<!-- Mobile device details page -->
-		<div data-role="page" id="interests" data-dialog="true">
-			<div data-role="header" data-theme="a">
-				<h1>Interests</h1>
+			<div data-role="header">
+				<h1>Tourist attractions</h1>
 			</div>
-			<div role="main" class="ui-content">
-				<p id="blablabla">Bla bla bla</p>
+			<div data-role="main" class="ui-content">
+				<a href="#masuria" data-rel="popup" data-position-to="window">Masuria</a><br>
+				<a href="#pomerania" data-rel="popup" data-position-to="window">Pomerania</a><br>
+				<a href="#thetatramountains" data-rel="popup" data-position-to="window">The Tatra Mountains</a><br>
+			</div>
+			<div data-role="popup" id="masuria" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img src="img/masuria.jpg" alt="Masuria">
+			</div>
+			<div data-role="popup" id="pomerania" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<img src="img/pomerania.jpg" alt="Pomerania">
+			</div>
+			<div data-role="popup" id="thetatramountains" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<img src="img/the-tatra-mountains.jpg" alt="The Tatra Mountains">
 			</div>
 			<div data-role="footer" data-position="fixed">
-				<a href="#pageone" class="ui-btn ui-icon-back ui-btn-icon-left"></a>
-			</div>
-		</div>
-		
+				<h1>Mykola Shchur</h1>
+			</div> 
+		</div> 
 	</body>
 </html>
