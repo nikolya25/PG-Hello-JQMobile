@@ -13,29 +13,113 @@
 	<body onload="init()">
 		
 		<!-- My app main page -->
-		<div data-role="page" id="pageone">
+		<div data-role="page" id="pageone" data-overlay-theme="b">
+			<div data-role="panel" id="mypanel" data-position="left" data-display="push">
+				<a href="#mimosa" data-rel="popup" data-position-to="window">MIMOSA</a><br>
+				<a href="#mojito" data-rel="popup" data-position-to="window">MOJITO</a><br>
+				<a href="#pinacolada" data-rel="popup" data-position-to="window">PIÑA COLADA</a><br>
+			</div>
 			<div data-role="header">
-				<h1>Order</h1>
+				<h1>Drinks</h1>
+				<a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left"></a>
 			</div>
 			<div data-role="main" class="ui-content">
-				<label for="text-basic">To:</label>
-				<input type="text" name="text-basic" id="text-basic" value="">
-				<label for="date">Date:</label>
-				<input type="date" name="date" id="date" value="">
-				<div class="ui-field-contain">
-					<label for="select-native-fc">Product:</label>
-					<select name="select-native-fc" id="select-native-fc">
-						<option value="pc">PC</option>
-						<option value="headphones">Headphones</option>
-						<option value="mouse">Mouse</option>
-						<option value="keyboard">Keyboard</option>
-						<option value="sound-speekers">Sound speakers</option>
-					</select>
+				<div data-role="popup" id="mimosa" class="recipepopup" data-overlay-theme="b" data-corners="false" data-tolerance="30,15">
+					<section class="recipe-content">
+						<h1 class="recipe-drink">MIMOSA<h1>
+						<section class="recipe-ingredients">
+							<h3 class="recipe-section-header anim-in-view in-view">Ingredients</h3>
+							<div section class="recipe-ingredients-group">
+								<ul class="recipe-list recipe-ingredients-list">
+									<li class="recipe-ingredients-item" itemprop="ingredients">2 oz. orange juice</li>
+									<li class="recipe-ingredients-item" itemprop="ingredients">4 oz. Brut champagne</li>
+								</ul>
+							</div>
+							<h4 class="recipe-section-header-optional anim-in-view in-view">Optional</h4>
+							<div section class="recipe-ingredients-group">
+								<ul class="recipe-list recipe-ingredients-list">
+									<li class="recipe-ingredients-item" itemprop="ingredients">1 tbsp. Grand Marnier</li>
+									<li class="recipe-ingredients-item" itemprop="ingredients">dash orange bitters</li>
+								</ul>
+							</div>
+						</section>
+						<section class="recipe-directions">
+							<h3 class="recipe-section-header anim-in-view in-view">Directions</h3>
+							<div section class="recipe-directions-group">
+								<ul class="recipe-list recipe-directions-list">
+									<li class="recipe-directions-step">Fill champagne flute 2/3 full of fresh-squeezed orange juice.</li>
+									<li class="recipe-directions-step">Top up with brut champagne.</li>
+									<li class="recipe-directions-step">Add the teaspoon of Grand Marnier.</li>
+								</ul>
+							</div>
+						</section>
+						<section class="recipe-extra-content">
+							<p>And if you're looking for something with a slightly more tropical flavor, there's also the Blushing Mimosa. For that one, create a mixture that's two parts orange juice, one part pineapple juice. 
+								Fill the champagne flute 2/3 full of the juice mixture, top with Champagne, and then add two tablespoons of grenadine.</p>
+						</section>
+					</section>
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<img src="img/mimosa.jpg" alt="MIMOSA">
 				</div>
-				<label for="number-pattern">Quantity:</label>
-				<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
-				<a href="#" class="ui-btn ui-btn-inline ui-corner-righr ui-shadow">Approve</a>
-				<a href="#" class="ui-btn ui-btn-inline ui-corner-down ui-shadow">Reject</a>
+				<div data-role="popup" id="mojito" class="recipepopup" data-overlay-theme="b" data-corners="false" data-tolerance="30,15">
+					<section class="recipe-content">
+						<h1 class="recipe-drink">MOJITO<h1>
+						<section class="recipe-ingredients">
+							<h3 class="recipe-section-header anim-in-view in-view">Ingredients</h3>
+							<div section class="recipe-ingredients-group">
+								<ul class="recipe-list recipe-ingredients-list">
+									<li class="recipe-ingredients-item" itemprop="ingredients">1/2 oz. lime juice (squeezed fresh)</li>
+									<li class="recipe-ingredients-item" itemprop="ingredients">1 tsp. superfine sugar</li>
+									<li class="recipe-ingredients-item" itemprop="ingredients">3 mint leaves</li>
+									<li class="recipe-ingredients-item" itemprop="ingredients">2 oz. white rum</li>
+									<li class="recipe-ingredients-item" itemprop="ingredients">Club soda or seltzer</li>
+									<li class="recipe-ingredients-item" itemprop="ingredients">Collins glass</li>
+								</ul>
+							</div>
+						</section>
+						<section class="recipe-directions">
+							<h3 class="recipe-section-header anim-in-view in-view">Directions</h3>
+							<div section class="recipe-directions-group">
+								<ul class="recipe-list recipe-directions-list">
+									<li class="recipe-directions-step">In a smallish Collins glass, muddle lime juice with 1/2 to 1 teaspoon superfine sugar</li>
+									<li class="recipe-directions-step">Add the few mint leaves, mushing them against the side of the glass</li>
+									<li class="recipe-directions-step">Fill glass 2/3 with cracked ice and pour in the rum</li>
+									<li class="recipe-directions-step">Pitch in the squeezed-out lime shell and top off with club soda or seltzer</li>
+								</ul>
+							</div>
+						</section>
+					</section>
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<img src="img/mojito.jpg" alt="MOJITO">
+				</div>
+				<div data-role="popup" id="pinacolada" class="recipepopup" data-overlay-theme="b" data-corners="false" data-tolerance="30,15">
+					<section class="recipe-content">
+						<h1 class="recipe-drink">PIÑA COLADA<h1>
+						<section class="recipe-ingredients">
+							<h3 class="recipe-section-header anim-in-view in-view">Ingredients</h3>
+							<div section class="recipe-ingredients-group">
+								<ul class="recipe-list recipe-ingredients-list">
+									<li class="recipe-ingredients-item" itemprop="ingredients">2 1/2 oz. rum</li>
+									<li class="recipe-ingredients-item" itemprop="ingredients">3 oz. pineapple juice</li>
+									<li class="recipe-ingredients-item" itemprop="ingredients">1 oz. coconut cream</li>
+									<li class="recipe-ingredients-item" itemprop="ingredients">Collins glass</li>
+								</ul>
+							</div>
+						</section>
+						<section class="recipe-directions">
+							<h3 class="recipe-section-header anim-in-view in-view">Directions</h3>
+							<div section class="recipe-directions-group">
+								<ul class="recipe-list recipe-directions-list">
+									<li class="recipe-directions-step">Combine the rum (Puerto Rican, Dominican, or Cuban are best–truth be told, we prefer ours with a more romantic-tasting añejo, such as Brugal or the Bacardi 8), unsweetened pineapple juice (you can sub in 3 ounces crushed—or whole—pineapple), and coconut cream (not coconut juice or milk; you want the sweetened stuff with the chemicals—Coco Lopez is traditional) in a blender.</li>
+									<li class="recipe-directions-step">Blend on high with a cup or so of crushed ice or 5 or 6 ice cubes (add them 1 or 2 at a time, through the hole in the lid)</li>
+									<li class="recipe-directions-step">Pour into tall glass. Garnish with—hell, whatever you've got. Cherry. Pineapple. Fruit. For extra eye-appeal, pour 1/2 ounce Cherry Heering in over the back of a spoon and watch it swirl.</li>
+								</ul>
+							</div>
+						</section>
+					</section>
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<img src="img/pina-colada.jpg" alt="PIÑA COLADA">
+				</div>
 			</div>
 			<div data-role="footer" data-position="fixed">
 				<h1>Mykola Shchur</h1>
