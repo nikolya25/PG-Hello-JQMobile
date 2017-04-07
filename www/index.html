@@ -5,6 +5,8 @@
 		<script src="js/pgb.js"></script>
 		<script src="cordova.js"></script>
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="css/themes/my-first-theme.css" />
+		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
 	</head>
@@ -13,24 +15,27 @@
 		<!-- My app main page -->
 		<div data-role="page" id="pageone">
 			<div data-role="header">
-				<h1>Tourist attractions</h1>
+				<h1>Order</h1>
 			</div>
 			<div data-role="main" class="ui-content">
-				<a href="#masuria" data-rel="popup" data-position-to="window">Masuria</a><br>
-				<a href="#pomerania" data-rel="popup" data-position-to="window">Pomerania</a><br>
-				<a href="#thetatramountains" data-rel="popup" data-position-to="window">The Tatra Mountains</a><br>
-			</div>
-			<div data-role="popup" id="masuria" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
-				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-				<img src="img/masuria.jpg" alt="Masuria">
-			</div>
-			<div data-role="popup" id="pomerania" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
-					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-					<img src="img/pomerania.jpg" alt="Pomerania">
-			</div>
-			<div data-role="popup" id="thetatramountains" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
-					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-					<img src="img/the-tatra-mountains.jpg" alt="The Tatra Mountains">
+				<label for="text-basic">To:</label>
+				<input type="text" name="text-basic" id="text-basic" value="">
+				<label for="date">Date:</label>
+				<input type="date" name="date" id="date" value="">
+				<div class="ui-field-contain">
+					<label for="select-native-fc">Product:</label>
+					<select name="select-native-fc" id="select-native-fc">
+						<option value="pc">PC</option>
+						<option value="headphones">Headphones</option>
+						<option value="mouse">Mouse</option>
+						<option value="keyboard">Keyboard</option>
+						<option value="sound-speekers">Sound speakers</option>
+					</select>
+				</div>
+				<label for="number-pattern">Quantity:</label>
+				<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
+				<a href="#" class="ui-btn ui-btn-inline ui-corner-righr ui-shadow">Approve</a>
+				<a href="#" class="ui-btn ui-btn-inline ui-corner-down ui-shadow">Reject</a>
 			</div>
 			<div data-role="footer" data-position="fixed">
 				<h1>Mykola Shchur</h1>

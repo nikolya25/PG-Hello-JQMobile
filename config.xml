@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-		id          = "Touristattractions"
+		id          = "Order"
         version     = "1.0.0" >
 
-    <name>Tourist attractions</name>
-    <description>Tourist attractions app</description>
+    <name>Order</name>
+    <description>Order app</description>
     <author email="kolya_shchur@mail.ru">
 		Mykola Shchur
 	</author>
